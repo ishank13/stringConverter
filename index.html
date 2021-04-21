@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Converter</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <form>
+                <div class="form-group">
+                  <label for="inputEmail3" class="row col-form-label">Enter String Here</label>
+                  <div class="row">
+                    <input type="text" class="form-control" id="inputString" placeholder="enter text...">
+                  </div>
+                </div>
+                <fieldset class="form-group">
+                  <div class="row">
+                    <!-- <legend class="col-form-label col-sm-2 pt-0">Radios</legend> -->
+                    <div class="col-sm-10">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" onclick="upperCase()">
+                        <label class="form-check-label" for="gridRadios1">
+                          Upper Case
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2" onclick="lowerCase()">
+                        <label class="form-check-label" for="gridRadios2">
+                          Lower Case
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" onclick="pascalCase()">
+                        <label class="form-check-label" for="gridRadios3">
+                         Pascal Case
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" onclick="snakeCase()">
+                        <label class="form-check-label" for="gridRadios3">
+                         Snake Case
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" onclick="uppersnakeCase()">
+                        <label class="form-check-label" for="gridRadios3">
+                         Upper Case with snake case
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" onclick="kebabCase()">
+                        <label class="form-check-label" for="gridRadios3">
+                         Kebab Case
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" onclick="camelCase()">
+                        <label class="form-check-label" for="gridRadios3">
+                         Camel Case
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12" id="outputString"></div>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
